@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --corfundo: #4B3621;
+    --botoesbordas: #C8A47E;
+    --fundosecundario: #E8D8C4;
+    --pretoprofundo: #1C1C1C;
+
+    /* Fundo principal em marrom escuro ou preto
+    Textos em bege/dourado para contraste
+    Botões em dourado para destacar chamadas à ação */
+
+    --fontetitulo: "Playfair Display SC", serif;
+    --fontetexto: "Poppins", serif;
+    --fontedestaques: "Cormorant Garamond", serif;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--corfundo);
+    font-family: var(--fontetexto);
+    color: var(--botoesbordas);
+}
+
+header > h1 {
+    font-variant: small-caps;
+    font-family: var(--fontetitulo);
+    text-align: center;
+    background-color: var(--pretoprofundo);
+    color: white;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    font-size: 10vh;
+    font-weight: bolder;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
+}
+
+section h2 {
+    max-width: 100vh;
+    font-family: var(--fontetitulo);
+    font-size: 2em;
+    color: var(--pretoprofundo);
+    font-variant: small-caps;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#primeiro{
+    padding-bottom: 10vh;
+}
+
+.claro{
+background-color: #F5F1EB;
+color: #3D2B1F;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.404);
+}
+
+.claro > h2{
+    color: #C3923C;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.404);
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+
+.escuro{
+    background-color: #121212;
+    color: #EAEAEA;
+    text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.404);
+}
+
+.escuro > h2 {
+    color: #D4AF37;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
+    font-variant: small-caps;
+}
+
+section {
+    padding-left: 3vh;
+    font-size: 1.5em;
+    line-height: 2em;
+    padding-bottom: 5vh;
+}
+
+section > p {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.normal{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+div{
+    position: relative;
+    display: inline-block;
+    padding: 50px;
+    margin: -7px;
+    width: 200vh;
+    height: 100vh;
+}
+
+#img01{
+    background-image: url('nespresso-imagens/grao-cafe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#img02{
+    background-image: url('nespresso-imagens/capsula-cafe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#img03{
+    max-height: 100vh;
+    background-image: url('nespresso-imagens/xicara-cafe-nespresso.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
+}
+
+#img04{
+    background-image: url('nespresso-imagens/capsulas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+footer{
+    font-family: var(--fontedestaques);
+    font-size: 1.3em;
+    font-weight: bolder;
+    background-color: #121212;
+    color: #D4AF37;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+footer > a {
+    text-decoration: none;
+    color: #D4AF37;
+}
+
+footer > a:hover{
+    text-decoration: solid;
+    color: white;
+    background-color: #D4AF37;
+    transition-duration: 1s;
+    padding: 10px;
+}
